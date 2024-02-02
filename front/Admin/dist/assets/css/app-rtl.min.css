@@ -27,7 +27,7 @@ File: Main Css File
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  height: 70px;
+  height: 0;
   padding: 0 0 0 calc(1.5rem / 2);
 }
 .navbar-header .dropdown .header-item.show {
@@ -53,7 +53,7 @@ File: Main Css File
 
 /* Search */
 .app-search {
-  padding: calc(32px / 2) 0;
+  padding: calc(-38px / 2) 0;
 }
 .app-search .form-control {
   border: none;
@@ -95,11 +95,11 @@ File: Main Css File
   }
 }
 .page-content {
-  padding: 70px calc(1.5rem / 2) 60px calc(1.5rem / 2);
+  padding: 0 calc(1.5rem / 2) 60px calc(1.5rem / 2);
 }
 
 .header-item {
-  height: 70px;
+  height: 0;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   color: var(--bs-header-item-color);
@@ -235,7 +235,7 @@ body[data-layout=horizontal] .navbar-brand-box {
   padding-right: 0px;
 }
 body[data-layout=horizontal] .page-content {
-  margin-top: 70px;
+  margin-top: 0;
   padding: 54px calc(1.5rem / 2) 60px calc(1.5rem / 2);
 }
 
@@ -365,7 +365,12 @@ body[data-layout=horizontal] .footer {
   margin: 0;
 }
 .metismenu li {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 .metismenu .mm-collapse {
@@ -396,7 +401,7 @@ body[data-layout=horizontal] .footer {
   bottom: 0;
   margin-top: 0;
   position: fixed;
-  top: 70px;
+  top: 0;
   -webkit-box-shadow: 0px 0px 13px 0px rgba(236, 236, 241, 0.44);
           box-shadow: 0px 0px 13px 0px rgba(236, 236, 241, 0.44);
 }
@@ -407,7 +412,7 @@ body[data-layout=horizontal] .footer {
 }
 .main-content .content {
   padding: 0 15px 10px 15px;
-  margin-top: 70px;
+  margin-top: 0;
 }
 
 #sidebar-menu {
@@ -429,6 +434,9 @@ body[data-layout=horizontal] .footer {
   font-size: 1rem;
 }
 #sidebar-menu ul li a {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: block;
   padding: 12px 20px;
   font-family: "Sarabun", sans-serif;
@@ -914,7 +922,7 @@ body[data-sidebar=colored] .menu-title {
   padding: 0 calc(1.5rem / 2);
   -webkit-box-shadow: var(--bs-box-shadow-sm);
           box-shadow: var(--bs-box-shadow-sm);
-  margin-top: 70px;
+  margin-top: 0;
   position: fixed;
   right: 0;
   left: 0;
@@ -2959,7 +2967,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^=col-]:last-
   color: #fff;
 }
 .table-rep-plugin .fixed-solution .sticky-table-header {
-  top: 70px !important;
+  top: 0 !important;
   background-color: #626ed4;
 }
 .table-rep-plugin .fixed-solution .sticky-table-header table {
@@ -3724,17 +3732,13 @@ body[data-bs-theme=dark] .timeline .cd-timeline-content {
 }
 
 [data-bs-theme=dark] .form-switch .form-check-input:not(:checked):not(:focus) {
-  --bs-form-switch-bg: url(
-    data:image/svg + xml,
-    %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="-4 -4 8 8"%3e%3ccircler="3"fill="rgba%28255, 255, 255, 0.25%29"/%3e%3c/svg%3e
-  );
+  --bs-form-switch-bg: url(data:image/svg + xml,
+  %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="-4 -4 8 8"%3e%3ccircler="3"fill="rgba%28255, 255, 255, 0.25%29"/%3e%3c/svg%3e);
 }
 
 .form-switch .form-check-input {
-  --bs-form-switch-bg: url(
-    data:image/svg + xml,
-    %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="-4 -4 8 8"%3e%3ccircler="3"fill="rgba%280, 0, 0, 0.25%29"/%3e%3c/svg%3e
-  );
+  --bs-form-switch-bg: url(data:image/svg + xml,
+  %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="-4 -4 8 8"%3e%3ccircler="3"fill="rgba%280, 0, 0, 0.25%29"/%3e%3c/svg%3e);
   width: 2em;
   margin-right: -2.5em;
   background-image: var(--bs-form-switch-bg);

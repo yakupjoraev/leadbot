@@ -14493,6 +14493,12 @@ a {
   border-radius: 30px;
 }
 
+.btn-fit-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .btn-dark {
   color: #e9ecef;
 }
@@ -14612,6 +14618,10 @@ a {
   color: var(--bs-light);
   background-color: rgba(var(--bs-dark-rgb), 0.75);
   border-color: rgba(var(--bs-dark-rgb), 0.75);
+}
+
+.form-check .form-check-input--big {
+  height: 1.5em !important;
 }
 
 .breadcrumb-item > a {
